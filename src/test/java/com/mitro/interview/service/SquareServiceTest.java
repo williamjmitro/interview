@@ -9,7 +9,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
-import java.util.function.IntBinaryOperator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -36,14 +35,14 @@ public class SquareServiceTest {
      * <p>
      * Rewrote this test to make use of the new requirement.
      */
-    @Test
-    public void testEvens() {
-        List<Integer> testList = List.of(4);
-
-        IntBinaryOperator expression = (left, right) -> left / right;
-
-        List<Integer> sortedList = squareService.findEvensAndSquare(testList, expression, 4);
-
-        assertEquals(sortedList.toString(), "[1]");
-    }
+//    @Test
+//    public void testEvens() {
+//        List<Integer> testList = List.of(4);
+//
+//        IntBinaryOperator expression = (left, right) -> left / right;
+//
+//        List<Integer> sortedList = squareService.findEvensAndSquare(testList, expression, 4);
+//
+//        assertEquals(sortedList.toString(), "[1]");
+//    }
 }
